@@ -67,3 +67,15 @@ button{
   text-decoration: none;
   cursor: pointer;
 }
+
+.submit{
+  position: relative;
+  left: 50px;
+  width: 50%;
+  height: 20%;
+  border-radius: 20px;
+  background:red;
+  text-align: center;
+  color: white;
+
+}

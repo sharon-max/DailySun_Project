@@ -1,0 +1,11 @@
+.nav{
+    position: fixed;
+    z-index: 5;
+}
+
+.foot{
+    position: fixed;
+    /* z-index: 5; */
+
+}
+

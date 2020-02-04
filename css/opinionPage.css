@@ -12,6 +12,11 @@
 .heading{
     font-family: 'Playfair Display', serif;
 }
+h1{  font-family: 'Playfair Display', serif;}
+
+h5{  font-family: 'Playfair Display', serif;}
+
+p{font-family: 'Source Sans Pro', sans-serif;}
 
 #myButto{
   position: relative;
@@ -115,4 +120,41 @@ div {
 h1{
   text-align: center;
   
+}
+
+#fname{
+  position: relative;
+  left: 100px;
+  border: solid;
+  border-radius: 20px;
+}
+
+#lname{
+  position: relative;
+  left: 80px;
+  border: solid;
+  border-radius: 20px;
+}
+
+ #lopp{
+  position: relative;
+  left: 85px;
+  height: 40vh;
+  border: solid;
+  border-radius: 20px;
+}
+
+
+ #lmage{
+  position: relative;
+  left: 10px;
+  border: solid;
+  border-radius: 20px;
+  
+}
+
+#submit{
+  position: relative;
+  left: 80px;
+  border-radius: 50px;
 }

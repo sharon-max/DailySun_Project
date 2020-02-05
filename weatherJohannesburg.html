@@ -8,6 +8,7 @@
     <title>Johannnesburg Weather</title>
 </head>
 <body>
+  <!--
     <nav class="navbar navbar-expand-lg navbar-light bg-danger col-12">
     <a class="navbar-brand text-white col-8"  style="font-family: 'Playfair Display', serif;"   href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
         
@@ -43,16 +44,45 @@
         
         </div>
         
-    </nav>    
+    </nav>     
+  -->
 
-<br>
+
+  <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+    <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+
+    <div id="mySidenav" class="sidenav bg-dark text-center">
+    <div class="card-body bg-dark">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <br><br>
+      <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+      <br><br>
+      <a href="index.html">Latest News</a>
+      <br>
+      <a href="weatherPage.html">Weather</a>
+      <br>
+      <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+      <br>
+      <a href="opinionPage.html">Opinion</a>
+    </div>
+    </div>
+    
+    <div class="navbar-brand col-4" id="menuToggle">
+    
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
+    </nav>
+<br> <br> <br>
+
 
 
 
 
  <h1>weekly weather</h1> 
- <h1>Johannesburg</h1>
- <p> 03 February- 10 February</p></h2>  
+ <h2 class="forecast"> 6 days forecast for Johannesburg</h2>
+  
  <div class="container">
     
     <div class="row">
@@ -60,7 +90,7 @@
         Monday
         <p class="date" >03/02</p class="date">
         <img src="assets/images/icons/water.png" alt="">
-        <p>30°C</p>
+        <h2>30°C</h2>
         <p>Rain</p>
       </div>
 
@@ -68,7 +98,7 @@
         Tuesday
         <p class="date">04/02</p>
         <img src="assets/images/icons/sun.png" alt="">
-        <p>20°C</p>
+        <h2>20°C</h2>
         <p>partly sunny</p>
       </div>
 
@@ -76,7 +106,7 @@
       Wednesday
       <p class="date">05/02</p>
         <img src="assets/images/icons/cloud.png" alt="">
-        <p>30°C</p>
+        <h2>30°C</h2>
         <p>partly clouldy</p>
       </div>
     </div>
@@ -87,7 +117,7 @@
           <p class="date" >06/02</p class="date">
          
           <img src="assets/images/icons/sun.png" alt="">
-          <p>25°C</p>
+          <h2>25°C</h2>
           <p>partly sunny</p>
         </div>
   
@@ -95,7 +125,7 @@
           Friday
           <p class="date">07/02</p>
           <img src="assets/images/icons/water.png" alt="">
-          <p>30°C</p>
+          <h2>30°C</h2>
           <p>Rain</p>
         </div>
   
@@ -103,7 +133,7 @@
         Saturday
         <p class="date">08/02</p>
           <img src="assets/images/icons/cloud.png" alt="">
-          <p>17°C</p>
+          <h2>17°C</h2>
           <p>partly clouldy</p>
         </div>
       </div>
@@ -114,6 +144,7 @@
 
 <br>
 
+
 <input class="search" type="text" placeholder="Search location">
 <br><br>
 
@@ -122,7 +153,7 @@
 
 
 
- <div class="card text-center">
+ <div class="card text-center iconColor">
     <div class="card-body bg-dark">
         <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
         <br><br>

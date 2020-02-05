@@ -1,0 +1,160 @@
+.card-body{
+    
+    background:lightgray;
+    width: 100%;
+    
+}
+.card {
+
+  
+
+}
+.heading{
+    font-family: 'Playfair Display', serif;
+}
+h1{  font-family: 'Playfair Display', serif;}
+
+h5{  font-family: 'Playfair Display', serif;}
+
+p{font-family: 'Source Sans Pro', sans-serif;}
+
+#myButto{
+  position: relative;
+  width: 50%;
+  height: 25%;
+  left: 80px;
+  border-radius: 20px;
+  background: orange;
+}
+.clicks{
+  position: relative;
+  left: 50px;
+  width: 50%;
+  height: 20%;
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+  color: #888;
+}
+
+.popUp {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:orange; /* Fallback color */
+  
+}
+
+/* Modal Content */
+.pop-content {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit{
+  position: relative;
+  left: 50px;
+  width: 50%;
+  height: 20%;
+  border-radius: 20px;
+  background:red;
+  text-align: center;
+  color: white;
+
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 14px 20px;
+  right: 50px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  
+}
+
+#fname{
+  position: relative;
+  left: 100px;
+  border: solid;
+  border-radius: 20px;
+}
+
+#lname{
+  position: relative;
+  left: 80px;
+  border: solid;
+  border-radius: 20px;
+}
+
+ #lopp{
+  position: relative;
+  left: 85px;
+  height: 40vh;
+  border: solid;
+  border-radius: 20px;
+}
+
+
+ #lmage{
+  position: relative;
+  left: 10px;
+  border: solid;
+  border-radius: 20px;
+  
+}
+
+#submit{
+  position: relative;
+  left: 80px;
+  border-radius: 50px;
+}

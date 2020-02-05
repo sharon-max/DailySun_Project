@@ -6,21 +6,26 @@
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weatherPage.css">
+    <link rel="stylesheet" href="css/Team.css">
     <title>WEATHER PAGE</title>
     
 </head>
 <body>
   <!-- test -->
-  
-<nav class="navbar navbar-expand-lg navbar-light bg-danger col-12">
+  <!--
+<nav class="navbar navbar-expand-lg navbar-light bg-danger col-12 ">
   <a class="navbar-brand text-white col-8"  style="font-family: 'Playfair Display', serif;"   href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
       
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       
       
       <span class="navbar-toggler-icon"></span>
-         </button>
-      
+   </button> 
+     
+    
+         
+         
+    
      <div class="collapse navbar-collapse" id="navbarNavDropdown">
           
       <ul class="navbar-nav text-white" style="font-family: 'Source Sans Pro', sans-serif">
@@ -36,46 +41,53 @@
           </li>
           
       <li class="nav-item">     
-      <a class="nav-link text-white" href="#PORTFOLIO">Weather</a>
+      <a class="nav-link text-white" href="#WEATHER">Weather</a>
       </li>
           
       <li class="nav-item"> 
           <a class="nav-link text-white" href="#ABOUT">Letter to Editor</a>
       </li>
-
-   
-
- <!--
-    
-<ul>
-  <li>
-    <a href="#">
-      <i class="fab fa-edge"></i>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <i class="fab fa-firefox"></i>
-    </a>
-    </li>
-  <li>
-    <a href="#">
-      <i class="fab fa-chrome"></i>
-    </a>
-    
-  </li>
-  <li>
-    <a href="#">
-      <i class="fab fa-opera"></i>
-    </a> 
-  </li> -->
 </ul>
       </div>
       
-  </nav>
-  <br>
-  
+    </nav -->
 
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+      <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+  
+      <div id="mySidenav" class="sidenav bg-dark text-center">
+      <div class="card-body bg-dark">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br><br>
+        <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+        <br><br>
+        <a href="index.html">Latest News</a>
+        <br>
+        <a href="weatherPage.html">Weather</a>
+        <br>
+        <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+        <br>
+        <a href="opinionPage.html">Opinion</a>
+      </div>
+      </div>
+      
+      <div class="navbar-brand col-4" id="menuToggle">
+      
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      </div>
+      </nav>
+      <br> <br>
+  <br>
+ 
+
+<<<<<<< HEAD
+   
+ 
+  <div class="accu weather col-12" >
+   <h1>  <img src="assets/images/icons/sun.svglogo.svg" alt="" width="40" height="40"> AccuWeather</h1>
+=======
 
   <nav class="navbar navbar-expand-lg navbar-light bg-danger col-12">
     <a class="navbar-brand text-white col-8"  style="font-family: 'Playfair Display', serif;"   href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
@@ -120,11 +132,10 @@
 
   <div class="accu" >
     <h1> AccuWeather</h1>
+>>>>>>> 6cfd2bd19219be822e0b1bb50eef268a7892ab9f
   </div>
 
-  <br>
-
-  
+ 
 <div>
   <h2>Johannesburg</h2>
 </div>
@@ -132,28 +143,36 @@
   <div class="container">
     
     <div class="row">
+<<<<<<< HEAD
+      <div class="col-4 coll1 box" >
+        <p class="day">Today</p>
+        <p class="date" >03/02</p>
+=======
 
       <div class="col coll1 box" >
         Today
         <p class="date" >03/02</p class="date">
+>>>>>>> 6cfd2bd19219be822e0b1bb50eef268a7892ab9f
         <img src="assets/images/icons/water.png" alt="">
-        <p>30°C</p>
+<br>
+
+        <h2>30°C</h2>
         <p> Mostly Rain</p>
       </div>
 
-      <div class="col coll2 box">
-        Tonight
+      <div class="col-4 coll2 box">
+        <p class="day">Tonight</p>
         <p class="date">03/02</p>
         <img src="assets/images/icons/cloud.png" alt="">
-        <p>28°C</p>
+        <h2>28°C</h2>
         <p>partly cloudy</p>
       </div>
 
-      <div class="col coll3 box">
-      Tomorrow
+      <div class="col-4 coll3 box">
+    <p class="day">Tomorrow</p>
       <p class="date">04/02</p>
         <img src="assets/images/icons/sun.png" alt="">
-        <p>29°C</p>
+        <h2>29°C</h2>
         <p>Sunny Nice</p>
       </div>
     </div>
@@ -170,27 +189,27 @@
     
     <div class="row">
       <div class="col coll1 box" >
-        Today
+        <p class="day">Today</p>
         <p class="date">03/02</p>
         <img src="assets/images/icons/sun.png" alt="">
-        <p>25°C</p>
+        <h2>25°C</h2>
         <p>partly sunny</p>
         
       </div>
 
       <div class="col coll2 box">
-        Tonight
+        <p class="day">Tonight</p>
         <p class="date">03/02</p>
         <img src="assets/images/icons/water.png" alt="">
-        <p>14C</p>
-        <p>Luckly Rain</p>
+        <h2>14C</h2>
+        <p>Luckly Rainy</p>
       </div>
 
       <div class="col coll3 box">
-      Tomorrow
+    <p class="day">Tomorrow</p>
       <p class="date">04/02</p>
       <img src="assets/images/icons/cloud.png" alt="">
-        <p>30°C</p>
+        <h2>30°C</h2>
         <p>partly cloudy</p>
         
       </div>
@@ -206,61 +225,47 @@
     
     <div class="row">
       <div class="col coll1 box" >
-        Today
+        <p class="day">Today</p>
        <p class="date">03/02</p>
        <img src="assets/images/icons/sun.png" alt="">
-        <p>28°C</p>
+        <h2>28°C</h2>
         <p>Plenty sun</p>
       </div>
 
       <div class="col coll2 box">
-        Tonight
+        <p class="day">Tonight</p>
         <p class="date">03/02</p>
         <img src="assets/images/icons/cloud.png" alt="">
-        <p>30°C</p>
-        <p>partly cloudsy</p>
+        <h2>30°C</h2>
+        <p>partly cloud</p>
       </div>
 
       <div class="col coll3 box">
-  
-
-      Tomorrow
-      <p class="date">04/03</p>
-        <img src="assets/images/icons/sun.png" alt="">
-        <p>10°C</p>
-        <p>partly sunny</p>
-      </div>
-    </div>
-  </div>
-  <br>
-  <button type="button" class="btn btn-warning">Weekly Weather</button>
-    
-    
+<p class="day">Tomorrow</p>
+<p class="date">04/02</p>
+<img src="assets/images/icons/sun.png" alt="">
+<h2>10°C</h2>
+<p>partly sunny</p>
+</div>
+</div>
+</div>
+<br>
+<button type="button" class="btn btn-warning">Weekly Weather</button>    
 
 
-       
-
-
-<br><br>
-
-
-
-
-
-  
-<div id="circle-container">
-	<div id="cc">
-	<div class="circle" id="five"></div>
-	<div class="circle" id="four"></div>
-	<div class="circle" id="three"></div>
-	<div class="circle" id="two"></div>
-	<div class="circle" id="one"></div>
-	</div>
+<br>
+<!--video -->
+  <h2>Weather Forecast Video</h2>
+<div class="video">
+<video autoplay muted loop class="myVideo"> <source src="assets/video/weather.vedio.mp4 " type="video/mp4">
+</video>
 </div>
 
 
+<br>  
+<!--footer-->
 
-  <div class="card text-center">
+  <div class="card text-center iconColor">
     <div class="card-body bg-dark">
         <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
         <br><br>
@@ -369,6 +374,12 @@
 
         
     </div>
+
+
+
+
+
+    
 
 
 

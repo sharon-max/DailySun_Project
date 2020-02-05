@@ -4,25 +4,34 @@
     width: 100%;
     
 }
-.card {
-
-  
-
+.nav {
+  position: fixed;
+  z-index: 5px;
+  height: 60px;
 }
+
+
 .heading{
-    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 4px;
 }
-h1{  font-family: 'Playfair Display', serif;}
+h1{  font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+    
 
 h5{  font-family: 'Playfair Display', serif;}
 
-p{font-family: 'Source Sans Pro', sans-serif;}
+p{font-family: 'Source Sans Pro', sans-serif;
+  
+}
 
 #myButto{
   position: relative;
   width: 50%;
   height: 25%;
   left: 80px;
+  bottom:15px ;
   border-radius: 20px;
   background: orange;
 }
@@ -99,7 +108,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 50%;
-  background-color: black;
+  background-color: orange;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -135,6 +144,12 @@ h1{
   border: solid;
   border-radius: 20px;
 }
+#Tname{
+  position: relative;
+  left: 105px;
+  border: solid;
+  border-radius: 20px;
+}
 
  #lopp{
   position: relative;
@@ -157,4 +172,87 @@ h1{
   position: relative;
   left: 80px;
   border-radius: 50px;
+}
+
+.camera{
+  position: relative;
+  bottom :50px;
+  left: 150px;
+  width: 50px;
+  height: 30px;
+}
+
+/* try out nav */
+.foot{
+  fill: orange;
+}
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -45px;
+  left: 290px;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+
+
+#menuToggle span
+{
+  display: block;
+  width: 45px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+  right: 35px;
+  
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(51, 51, 51);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

@@ -22,39 +22,32 @@
   <body>
 
 
-    <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12">
-      <a class="navbar-brand text-white col-8"  style="font-family: 'Playfair Display', serif;"   href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
-          
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          
-          
-          <span class="navbar-toggler-icon"></span>
-             </button>
-          
-         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              
-          <ul class="navbar-nav text-white" style="font-family: 'Source Sans Pro', sans-serif">
-              
-              <li class="nav-item active">
-                   <a class="nav-link text-white" href="#Latest News">Latest News</a>
-              
-              </li>
-              
-          <li class="nav-item">
-                   <a class="nav-link text-white" href="#SERVICES">Lifestyle</a>
-              
-              </li>
-              
-          <li class="nav-item">     
-          <a class="nav-link text-white" href="#PORTFOLIO">Weather</a>
-          </li>
-              
-          <li class="nav-item"> 
-              <a class="nav-link text-white" href="#ABOUT">Letter to Editor</a>
-          </li>
-          </ul>
-          </div>
-      </nav>
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+      <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+  
+      <div id="mySidenav" class="sidenav bg-dark text-center">
+      <div class="card-body bg-dark">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br><br>
+        <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+        <br><br>
+        <a href="index.html">Latest News</a>
+        <br>
+        <a href="weatherPage.html">Weather</a>
+        <br>
+        <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+        <br>
+        <a href="opinionPage.html">Opinion</a>
+      </div>
+      </div>
+      
+      <div class="navbar-brand col-4" id="menuToggle">
+      
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
+  </nav>
 
   
 <!-- all content -->
@@ -110,7 +103,7 @@
      <p>Time Stamp</p></div>
   </div>
 
-  <a class="btn bg-warning" href="#"><h2>more</h2></a>
+  <a class="btn bg-warning" href="#"><h1>Load More</h1></a>
   <br>
   <hr>
 </div>
@@ -132,6 +125,7 @@
       </div>
     </div>
 
+    <br>
     <div class="row no-gutters">
         <img class=" img col-5" src="assets/images/pic3.jpg" class="card-img" alt="...">
       <div class="col-7">
@@ -141,7 +135,6 @@
         </div>
       </div>
     </div>
-<br>
 </div>
 <br>
 <div class="row no-gutters">
@@ -225,7 +218,7 @@
 </div>
 </div>
 <br><br>
-<a class="btn bg-warning" href="#"><h2>more</h2></a>
+<a class="btn bg-warning" href="#"><h1>Load More</h1></a>
 </div>
 <!-- <button id="myButto">Click Here To <br>
   Share Your Opinion</button> -->
@@ -246,7 +239,7 @@
    <br><br>
   
    <form action="https://azdailysun.com/forms/subscription_services/subscribe/subscribe_to_6_day_full_access/">
-    <button class="bbt" type="submit">sign- up</button>
+    <button class="bbt" type="submit"><h1>Sign- Up</h1></button>
  </form>
    <br> <br>
 
@@ -259,12 +252,12 @@
  
 
 
-  <div class="card text-center">
+  <div class="foot card text-center">
       <div class="card-body bg-dark">
           <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
           <br><br>
         <p class="card-text text-secondary " style="font-family: 'Source Sans Pro', sans-serif">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>
-        <div class="Navlinks" style="font-family: 'Source Sans Pro', sans-serif;">
+        <div class="NavlinksOne" style="font-family: 'Source Sans Pro', sans-serif;">
         <a class="nav-link text-white" href="#HOME">Home</a>
         <a class="nav-link text-white" href="#NEWS">News</a>
         <a class="nav-link text-white" href="#CELEBS">Celebs</a>

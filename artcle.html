@@ -7,10 +7,40 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/opinionPage.css">
+    <link rel="stylesheet" href="css/Team.css">
 
     <title>Artcles </title>
   </head>
   <body>
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+      <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+  
+      <div id="mySidenav" class="sidenav bg-dark text-center">
+        <div class="card-body bg-dark">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br><br>
+            <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+            <br><br>
+            <a href="index.html">Latest News</a>
+            <br>
+            <a href="weatherPage.html">Weather</a>
+            <br>
+            <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+            <br>
+            <a href="opinionPage.html">Opinion</a>
+        </div>
+      </div>
+      
+      <div class="navbar-brand col-4" id="menuToggle">
+      
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
+  </nav>
+
+
 
       
 
@@ -26,9 +56,10 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem modi recusandae, ratione aut harum in officia voluptatibus unde, nulla repudiandae dolor quidem sequi optio eius? Repellendus blanditiis numquam suscipit hic.
       </p>
       <p class="card-text"><small class="text-muted">2 hours ago</small></p>
-      <button class="back">Back</button>
+     <a href="opinionPage.html"> <button class="btn back">Back</button></a>
   
-
+<script src="js/opinionPage.js"></script>
+<script src="js/Team.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

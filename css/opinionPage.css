@@ -12,7 +12,7 @@ text-decoration: none;
 .names{
 position: relative;
 font-weight: bold;
-left:5px;
+left:20px;
 }
 
 
@@ -22,14 +22,10 @@ left:5px;
 }
 
 
-#myButto{
+.myButto{
 position: relative;
-width: 50%;
-height: 25%;
-left: 80px;
-bottom:15px ;
-border-radius: 20px;
-background:rgb(255, 174, 0);
+left: 100px;
+bottom:20px;
 }
 .clicks{
 position: relative;
@@ -52,7 +48,7 @@ top: 0;
 width: 100%; /* Full width */
 height: 100%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
-background:rgb(255, 174, 0); /* Fallback color */
+ /* Fallback color */
 
 }
 
@@ -86,13 +82,9 @@ cursor: pointer;
 
 .submit{
 position: relative;
-left: 50px;
-width: 50%;
+left: 50px;;
 height: 20%;
-border-radius: 20px;
-background:white;
 text-align: center;
-color: black;
 font-weight: bold;
 
 }
@@ -111,76 +103,78 @@ box-sizing: border-box;
 .SubmitF {
 position: relative;
 text-align: center;
-top: 20px;
+top: -2px;
 left: 80px;
-width: 50%;
-background:lightgray;
-color: black;
-padding: 5px;
 margin: 8px 0;
 border: none;
-border-radius: 20px;
 cursor: pointer;
-border: 1px solid rgb(70, 60, 60);
 }
 
-form{
-background: rgb(255, 174, 0);
+.SubmitB{
+  position: relative;
+  top:20px;
 }
+
+
 input[type=submit]:hover {
 background-color: red;
 }
 
-
+.form-heading{
+  position: relative;
+  padding-left: 15px;
+}
 
 
 
 #fname{
 position: relative;
-width: 230px;
+width: 90%;
 background: white;
-left: 50px;
+left: 20px;
 border: 1px solid rgb(70, 60, 60);
-border-radius: 20px;
+
 }
 
 #lname{
 position: relative;
 
-width: 230px;
+width: 90%;
 background:white;
-left: 28px;
+left: 20px;
 border: 1px solid rgb(70, 60, 60);
-border-radius: 20px;
+
 }
 #Tname{
 position: relative;
-width: 230px;
+top: 30px;
+width: 90%;
 background: white;
-left: 55px;
+left: 20px;
 border: 1px solid rgb(70, 60, 60);
-border-radius: 20px;
+
 }
 
 #lopp{
 position: relative;
-width: 230px;
+top: 30px;
+width: 90%;
 background: white;
-left: 24px;
+left: 20px;
 height: 40vh;
 border: 1px solid rgb(70, 60, 60);
-border-radius: 20px;
+
 }
 
 
 #lmage{
 position: relative;
-
-width: 230px;
+top: 30px;
+width:90%;
 background: white;
-left: 24px;
+left:20px;
 border: 1px solid rgb(70, 60, 60);
-border-radius: 20px;
+
 
 }
 
@@ -188,18 +182,31 @@ border-radius: 20px;
 position: relative;
 left: 80px;
 border-radius: 50px;
+
 }
 
 .camera{
 position: relative;
+bottom: 20px;
 z-index: 5px;
-bottom :3px;
-right: 150px;
+left: 20px;
 width: 50px;
 height: 30px;
 }
 
+.title{
+  position: relative;
+  top: 20px;
+}
 
+.Opinion{
+  position: relative;
+  top: 30px;
+}
 
+.Upload{
+  position: relative;
+  top: 30px;
+}
 
 

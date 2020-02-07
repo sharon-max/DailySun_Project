@@ -28,7 +28,7 @@ window.onclick = function(event) {
     popUp.style.display = "none";}
   }
 
-  const btn = document.querySelector("#myButto");
+  const btn = document.querySelector(".myButto");
  btn.addEventListener('click', ()=>{
      window.open('http://127.0.0.1:5500/Form.html')
  });
@@ -39,8 +39,8 @@ card.addEventListener('click', ()=>{
     window.open('http://127.0.0.1:5500/artcle.html')
 });
 
-const back = document.querySelector(".A");
-card.addEventListener('click', ()=>{
+const backY = document.querySelector(".back");
+backY.addEventListener('click', ()=>{
     window.open('http://127.0.0.1:5500/opinionPage.html')
 });
 

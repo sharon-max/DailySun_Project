@@ -14,48 +14,49 @@
     <title>LETTER TO EDITOR</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger col-12">
-        <a class="navbar-brand text-white col-8"  style="font-family: 'Playfair Display', serif;"   href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
-            
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            
-            
-            <span class="navbar-toggler-icon"></span>
-               </button>
-            
-           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                
-            <ul class="navbar-nav text-white" style="font-family: 'Source Sans Pro', sans-serif">
-                
-                <li class="nav-item active">
-                     <a class="nav-link text-white" href="#Latest News">Latest News</a>
-                
-                </li>
-                
-            <li class="nav-item">
-                     <a class="nav-link text-white" href="#SERVICES">Lifestyle</a>
-                
-                </li>
-                
-            <li class="nav-item">     
-            <a class="nav-link text-white" href="#PORTFOLIO">Weather</a>
-            </li>
-                
-            <li class="nav-item"> 
-                <a class="nav-link text-white" href="#ABOUT">Letter to Editor</a>
-            </li>
     
-            </ul>
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+      <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+  
+      <div id="mySidenav" class="sidenav bg-dark text-center">
+        <div class="card-body bg-dark">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br>
+            <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
             
-            </div>
+            <a href="index.html">Latest News</a>
             
-        </nav>
+            <a href="weatherPage.html">Weather</a>
+            
+            <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+            <br>
+            <a href="opinionPage.html">Opinion</a>
+            <a class="nav-link text-white" href="#CELEBS">Celebs</a>
+        <a class="nav-link text-white" href="#SPORTS">Sports</a>
+        <a class="nav-link text-white" href="#LOVE AND SEX">Love and Sex</a>
+        <a class="nav-link text-white" href="#SUN DEFENDER">Sun Defender</a>
+        <a class="nav-link text-white" href="#SUNWHEELS">SunWheels</a>
+        <a class="nav-link text-white" href="#LIFESTYLE">Lifestyle</a>
+        <a class="nav-link text-white" href="#LOTTO">Lotto</a>
+        </div>
+      </div>
+      
+      <div class="navbar-brand col-4" id="menuToggle">
+      
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
+  </nav>
 
-        <br>
-        <h1>Share Your Opinion Here  </h1>
+
+        
+        <h1 class="form-heading"> Share Your Opinion Here  </h1>
         <hr>
 
 <div>
+  <h1 class="form-heading"> Share Your Opinion Here  </h1>
+  <hr>
   <form action="/action_page.php">
     <label class="names" for="fname"> Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -64,14 +65,14 @@
     <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
     <br>
-    <label class="names" for="lname">Title</label>
+    <label class="names title" for="lname">Title</label>
     <input type="text" id="Tname" name="Title" placeholder="Type your Title  ...">
 
     <br>
-    <label class="names" for="lname">Opinion</label>
+    <label class="names Opinion" for="lname">Opinion</label>
     <input type="text" id="lopp" name="lastname" placeholder="Type in here...">
 <br>
-<label class="names" for="Iname">Upload <br> image</label>
+<label class="names Upload" for="Iname">Upload  image</label>
 <input type="text" id="lmage" name="lastname"placeholder="" encoding="UTF-8"?>
 <svg class="camera" enable-background="new 0 0 420.8 420.8" version="1.1" viewBox="0 0 420.8 420.8" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 
@@ -85,7 +86,7 @@
 </svg >
 <br>
 
-    <button class="SubmitF"><h2>Submit</h2></button>
+<a href="opinionPage.html"><button class="btn SubmitF"><h2 class="sumitB">Submit</h2></button></a>
   </form>
 </div>
 
@@ -148,19 +149,21 @@
           
       </div>
     
-
+      <script src="js/opinionPage.js"></script>
+      <script src="js/Team.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script src="js/opinionPage.js"></script>
+   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </div>
   </body>
 </html>

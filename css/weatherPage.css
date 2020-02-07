@@ -1,31 +1,35 @@
 
-h1{font-family: 'Playfair Display', serif;
-    
-    font-size: 28px;
-}
 
-h2{ font-family: 'Source Sans Pro', sans-serif;
-   font-size: 18px; 
-}
-
-p{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;    
-}
 .head{
-  text-align: center;
+  text-align: left;
+  color: black;
+  top: 70px;
+  position: relative;
+  
 }
 
-.coll1{
+.acc{
+    bottom: 50px;
+}
+.column1{
     background-color: lightgrey;
 }
 
-.coll2{
+.column2{
     background-color:lightgrey;
 }
 
-.coll3{
+.column3{
     background-color:lightgray;
+}
+
+.textt{
+    text-align: center;
+}
+
+.weekBtn{
+    top:5px;
+    position: relative;
 }
 
 .container{
@@ -56,12 +60,9 @@ p{
 
 .btn{
   position: relative;
-  left: 120px;
-  width: 150px;
-  padding: 4px;
-  color:black;
-  border-radius:20px;
-  background-color: rgb(255, 174, 0);
+  left: 100px;
+  
+ 
 }
 
 .celsus{
@@ -97,14 +98,24 @@ p{
 
 /*video*/
 
+
+
+
+
+
 .video{
     width: 100vw;
     height: 50vh;
     overflow: hidden;
 }
-
-
-
-
-
+.myVideo{
+    height: 70vh;
+}
+.gradient{
+  background: linear-gradient(180deg, rgba(248, 246, 246, 0.034) 0%, rgba(196, 191, 191, 0.911) 50%, rgb(119, 108, 108) 100%);
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  top:270px;
+}
 

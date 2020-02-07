@@ -1,258 +1,205 @@
 .card-body{
     
-    background:lightgray;
-    width: 100%;
-    
+  background:lightgray;
+  width: 100%;
+  
 }
-.nav {
-  position: fixed;
-  z-index: 5px;
-  height: 60px;
+
+a:active{
+text-decoration: none;
+}
+
+.names{
+position: relative;
+font-weight: bold;
+left:5px;
 }
 
 
 .heading{
-    position: relative;
-    top: 4px;
+  position: relative;
+  top: 4px;
 }
-h1{  font-family: 'Playfair Display', serif;
-    font-size: 18px;
-}
-    
 
-h5{  font-family: 'Playfair Display', serif;}
-
-p{font-family: 'Source Sans Pro', sans-serif;
-  
-}
 
 #myButto{
-  position: relative;
-  width: 50%;
-  height: 25%;
-  left: 80px;
-  bottom:15px ;
-  border-radius: 20px;
-  background: orange;
+position: relative;
+width: 50%;
+height: 25%;
+left: 80px;
+bottom:15px ;
+border-radius: 20px;
+background:rgb(255, 174, 0);
 }
 .clicks{
-  position: relative;
-  left: 50px;
-  width: 50%;
-  height: 20%;
-  border-radius: 20px;
-  background: white;
-  text-align: center;
-  color: #888;
+position: relative;
+left: 50px;
+width: 50%;
+height: 20%;
+border-radius: 20px;
+background: white;
+text-align: center;
+color: #888;
 }
 
 .popUp {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color:orange; /* Fallback color */
-  
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background:rgb(255, 174, 0); /* Fallback color */
+
 }
 
 /* Modal Content */
 .pop-content {
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+position: relative;
+margin: auto;
+bottom: 50px;
+padding: 20px;
+width: 80%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+position: relative;
+bottom: 70px;
+color: black;
+font-weight: bold;
+float: right;
+left: 60px;
+font-size: 45px;
+font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+color: #000;
+text-decoration: none;
+cursor: pointer;
 }
 
 .submit{
-  position: relative;
-  left: 50px;
-  width: 50%;
-  height: 20%;
-  border-radius: 20px;
-  background:red;
-  text-align: center;
-  color: white;
+position: relative;
+left: 50px;
+width: 50%;
+height: 20%;
+border-radius: 20px;
+background:white;
+text-align: center;
+color: black;
+font-weight: bold;
 
 }
 
 input[type=text], select {
-  width: 50%;
-  padding: 14px 20px;
-  right: 50px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+width: 50%;
+padding: 14px 20px;
+right: 50px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
 }
 
-input[type=submit] {
-  width: 50%;
-  background-color: orange;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.SubmitF {
+position: relative;
+text-align: center;
+top: 20px;
+left: 80px;
+width: 50%;
+background:lightgray;
+color: black;
+padding: 5px;
+margin: 8px 0;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+border: 1px solid rgb(70, 60, 60);
 }
 
+form{
+background: rgb(255, 174, 0);
+}
 input[type=submit]:hover {
-  background-color: red;
+background-color: red;
 }
 
-div {
-  border-radius: 5px;
-  padding: 20px;
-}
 
-h1{
-  text-align: center;
-  
-}
+
+
 
 #fname{
-  position: relative;
-  left: 100px;
-  border: solid;
-  border-radius: 20px;
+position: relative;
+width: 230px;
+background: white;
+left: 50px;
+border: 1px solid rgb(70, 60, 60);
+border-radius: 20px;
 }
 
 #lname{
-  position: relative;
-  left: 80px;
-  border: solid;
-  border-radius: 20px;
+position: relative;
+
+width: 230px;
+background:white;
+left: 28px;
+border: 1px solid rgb(70, 60, 60);
+border-radius: 20px;
 }
 #Tname{
-  position: relative;
-  left: 105px;
-  border: solid;
-  border-radius: 20px;
+position: relative;
+width: 230px;
+background: white;
+left: 55px;
+border: 1px solid rgb(70, 60, 60);
+border-radius: 20px;
 }
 
- #lopp{
-  position: relative;
-  left: 85px;
-  height: 40vh;
-  border: solid;
-  border-radius: 20px;
+#lopp{
+position: relative;
+width: 230px;
+background: white;
+left: 24px;
+height: 40vh;
+border: 1px solid rgb(70, 60, 60);
+border-radius: 20px;
 }
 
 
- #lmage{
-  position: relative;
-  left: 10px;
-  border: solid;
-  border-radius: 20px;
-  
+#lmage{
+position: relative;
+
+width: 230px;
+background: white;
+left: 24px;
+border: 1px solid rgb(70, 60, 60);
+border-radius: 20px;
+
 }
 
 #submit{
-  position: relative;
-  left: 80px;
-  border-radius: 50px;
+position: relative;
+left: 80px;
+border-radius: 50px;
 }
 
 .camera{
-  position: relative;
-  bottom :50px;
-  left: 150px;
-  width: 50px;
-  height: 30px;
-}
-
-/* try out nav */
-.foot{
-  fill: orange;
-}
-
-
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: -45px;
-  left: 290px;
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+position: relative;
+z-index: 5px;
+bottom :3px;
+right: 150px;
+width: 50px;
+height: 30px;
 }
 
 
 
 
-#menuToggle span
-{
-  display: block;
-  width: 45px;
-  height: 6px;
-  margin-bottom: 5px;
-  position: relative;
-  right: 35px;
-  
-  background: white;
-  border-radius: 3px;
-  z-index: 1;
 
-}
-
-.sidenav {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgb(51, 51, 51);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: red;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 60px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}

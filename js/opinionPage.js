@@ -1,7 +1,7 @@
-const popUp = document.getElementById("myPopUp");
+// const popUp = document.getElementById("myPopUp");
 
 // Get the button that opens the modal
-const btn = document.getElementById("myButto");
+// const btn = document.getElementById("myButto");
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
@@ -10,12 +10,12 @@ const span = document.getElementsByClassName("close")[0];
 
 const Art= document.getElementsByClassName("fullArticle");
 
-const card= document.getElementsByClassName("card")
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  popUp.style.display = "block";
-}
+
+// // When the user clicks the button, open the form 
+// btn.onclick = function() {
+//   form.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -28,29 +28,21 @@ window.onclick = function(event) {
     popUp.style.display = "none";}
   }
 
-  const button = document.querySelector(".submit");
- button.addEventListener('click', ()=>{
+  const btn = document.querySelector("#myButto");
+ btn.addEventListener('click', ()=>{
      window.open('http://127.0.0.1:5500/Form.html')
  });
 
 // function for displayin full article
- function  art () {document.getElementsByClassName("fullArticle")
-  Art.style.display = "none";
-}
+const card = document.querySelector(".A");
+card.addEventListener('click', ()=>{
+    window.open('http://127.0.0.1:5500/artcle.html')
+});
+
+const back = document.querySelector(".A");
+card.addEventListener('click', ()=>{
+    window.open('http://127.0.0.1:5500/opinionPage.html')
+});
 
 
-card.onclick = function(event) {
-  if (event.target == Art) {
-    Art.style.display = "block";}
-  }
 
-  
-// navigation functions 
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "360px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}

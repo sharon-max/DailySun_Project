@@ -49,14 +49,20 @@
       top: -70px;
   }
 
-  .btn{
+  .text2{
+    position: relative;
+    padding-left: 7px;
+  }
+
+  .btn1{
       position: relative;
-      bottom: 5px;
-      left:80px;
-      border-radius: 20px;
+      bottom: 4px;
+      left:105px;
       width: 150px;
-      color: #000;
-      background-color: rgb(255, 174, 0);
+  }
+  .b1{
+    position: relative;
+    top: 4px;
   }
 /* 
   .row1{
@@ -64,33 +70,30 @@
   } */
 
   .img{
-    border-radius: 20px;
-    width: 30%;
-  }
- /* popup section */
-
-  .bbt{
     position: relative;
-    left: 70px;
-    width: 60%;
-    height: 40%;
-    border-radius: 50px;
-    background: white;
-    text-align: center;
-    color: #888;
-  } 
+    width: 30%;
+    padding-left: 10px;
+
+  }
+ 
 .text-muted{
   color: #000;
 }
  
-.card-text{
-  color: #000;
-}
+
 a {
   cursor: pointer;
   text-decoration: none;
 }
 /* This is for the positioning of the Close Link */
+/* .popUp{
+position: absolute;
+height: 100vh;
+width: 100vw;
+z-index: 5;
+padding-left: 10px;
+} */
+
 #popupBoxClose {
   font-size: 20px;
   line-height: 15px;
@@ -99,17 +102,21 @@ a {
   position: absolute;
   color: #6fa5e2;
   font-weight: 500;
+
 }
+
 
   .pop-content{
     position: fixed; /* Stay in place */
-    top: 45px;
+    top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color:orange; /* Fallback color */
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 5px;
+    z-index: 5;
+    padding-left: 20px;
+    
   }
   
   /* The Close Button */

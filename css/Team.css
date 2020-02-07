@@ -1,14 +1,40 @@
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+a{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2em;
+}
+
+.btn{
+  position: relative;
+  padding: 4px;
+  border-radius: 20px;
+  background-color: rgb(255, 174, 0);
+  width: 150px;
+}
+/* Navbar and footer style */
+
 .nav{
     position: fixed;
     z-index: 5;
     height: 60px;
 }
 
-.foot{
-    fill: orange;
+.icon{
+    fill: rgb(255, 174, 0);
 }
-
-
 
 #menuToggle
   {
@@ -16,16 +42,11 @@
     position: relative;
     top: -45px;
     left: 290px;
-    
     z-index: 1;
-    
     -webkit-user-select: none;
     user-select: none;
   }
   
-  
-  
-
   #menuToggle span
   {
     display: block;
@@ -38,16 +59,15 @@
     background: white;
     border-radius: 3px;
     z-index: 1;
- 
   }
   
   .sidenav {
     height: 100%;
-    width: 0;
+    width: 100vw;
     position: fixed;
     z-index: 5;
     top: 0;
-    left: 0;
+    left: -100vw;
     background-color: rgb(51, 51, 51);
     overflow-x: hidden;
     transition: 0.5s;
@@ -79,3 +99,4 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+

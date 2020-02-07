@@ -3,115 +3,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content=" Get Johannesburg weekly weather forecast.Weather conditions & reports, maps & severe weather alerts at a given location.">
+
+    <!--Description Meta Tag-->
+    <meta name="description" content=" Get Johannesburg,Durban and Cape Town daily and weekly weather forecast.Weather conditions & reports, maps & severe weather alerts at a given location.">
+    
+      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weatherPage.css">
     <link rel="stylesheet" href="css/Team.css">
-    <title>Johannnesburg Weather</title>
+    <title>WEATHER PAGE</title>
+    
 </head>
 <body>
-  
-<!--navbar-->
-
+ 
+<!--navigation Bar-->
 <nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+  <a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
 
-<a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+    <div id="mySidenav" class="sidenav bg-dark text-center">
 
-<div id="mySidenav" class="sidenav bg-dark text-center">
-<div class="card-body bg-dark">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="card-body bg-dark">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <br><br>
+      <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+      <br><br>
+      <a href="index.html">Latest News</a>
+      <br>
+      <a href="weather.html">Weather</a>
+      <br>
+      <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
+      <br>
+      <a href="opinionPage.html">Opinion</a>
+    </div>
 
-<br><br>
-
-  <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
-
-<br><br>
-
-  <a href="index.html">Latest News</a>
-
-<br>
-
-  <a href="weatherPage.html">Weather</a>
-
-<br>
-  <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
-
- <br>
-
-  <a href="opinionPage.html">Opinion</a>
-
-</div>
-
-</div>
-       
-<div class="navbar-brand col-4" id="menuToggle">
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-</div>
+    </div>
+      
+    <div class="navbar-brand col-4" id="menuToggle">
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
 </nav>
 
 <br><br><br>
+ 
 
-<h1 class="head">6 days forecast for Johannesburg</h1> 
-<h2 class="forecast">Weekly Weather</h2>
+ 
+ 
+<div class="accu weather col-12" >
+  <h1 class="head">  <img src="assets/images/icons/sun.svglogo.svg" alt="logo" width="40" height="40"> AccuWeather</h1>
+</div>
+
+<!--column-->
+
+<div>
+  <h1>Johannesburg</h1>
+</div>
   
 <div class="container">
     
 <div class="row">
 
-<div class="col coll1" >
-  <h2> Monday</h2>
+<div class="col coll1 box" >
+  <h2 class="day">Today</h2>
   <p class="date" >03/02</p class="date">
-  <img src="assets/images/icons/water.png" alt="">
+  <img src="assets/images/icons/water.png" alt="rain"> 
   <h2>30°C</h2>
-  <h2>Rain</h2>
+  <h2> Mostly Rain</h2>
 </div>
 
-<div class="col coll2">
-  <h2> Tuesday</h2> 
+<div class="col coll2 box">
+  <h2 class="day">Tonight</h2>
+  <p class="date">03/02</p>
+  <img src="assets/images/icons/water.png" alt="rain">
+  <h2>14C</h2>
+  <h2>Luckly Rainy</h2>
+</div>
+
+<div class="col coll3 box">
+  <h2 class="day">Tomorrow</h2>
   <p class="date">04/02</p>
-  <img src="assets/images/icons/sun.png" alt="">
-  <h2>20°C</h2>
-  <h2>partly sunny</h2>
-</div>
-
-<div class="col coll3">
-<h2>Wednesday</h2> 
-  <p class="date">05/02</p>
-  <img src="assets/images/icons/cloud.png" alt="">
+  <img src="assets/images/icons/cloud.png" alt="cloudly">
   <h2>30°C</h2>
-  <h2>partly clouldy</h2>
+  <h2>partly cloudy</h2>
 </div>
 
 </div>
 
+</div>
 
+<br> 
+  
+<button type="button" class="btn buton"> <h2>Weekly Weather</h2></button>
 
+   
+<div>
+  <h1>Durban</h1>
+</div>
+  
+<div class="container">
+    
 <div class="row">
 
-<div class="col coll1" >
-  <h2>Thursday</h2>
-  <p class="date" >06/02</p class="date">
-  <img src="assets/images/icons/sun.png" alt="">
+<div class="col coll1 box" >
+  <h2 class="day">Today</h2>
+  <p class="date">03/02</p>
+  <img src="assets/images/icons/sun.png" alt="sunny">
   <h2>25°C</h2>
   <h2>partly sunny</h2>
 </div>
-  
-<div class="col coll2">
-  <h2> Friday</h2>
-  <p class="date">07/02</p>
-  <img src="assets/images/icons/water.png" alt="">
-  <h2>30°C</h2>
-  <h2>Rain</h2>
+
+<div class="col coll2 box">
+  <h2 class="day">Tonight</h2>
+  <p class="date">03/02</p>
+  <img src="assets/images/icons/water.png" alt="rain">
+  <h2>14C</h2>
+  <h2>Luckly Rainy</h2>
 </div>
-  
-<div class="col coll3">
-  <h2> Saturday</h2>
-  <p class="date">08/02</p>
-  <img src="assets/images/icons/cloud.png" alt="">
-  <h2>17°C</h2>
-  <h2>partly clouldy</h2>
+
+<div class="col coll3 box">
+  <h2 class="day">Tomorrow</h2>
+  <p class="date">04/02</p>
+  <img src="assets/images/icons/cloud.png" alt="cloud">
+  <h2>30°C</h2>
+  <h2>partly cloudy</h2>
 </div>
 
 </div>
@@ -120,7 +135,62 @@
 
 <br>
 
+<button type="button" class="btn"> <h2>Weekly Weather</h2></button>
 
+<div>
+<h1>Cape Town</h1>
+</div>
+  
+<div class="container">
+    
+<div class="row">
+
+<div class="col coll1 box" >
+  <h2 class="day">Today</h2>
+  <p class="date">03/02</p>
+  <img src="assets/images/icons/sun.png" alt="suuny">
+  <h2>28°C</h2>
+  <h2>Plenty sun</h2>
+</div>
+
+<div class="col coll2 box">
+  <h2 class="day">Tonight</h2>
+  <p class="date">03/02</p>
+  <img src="assets/images/icons/cloud.png" alt="cloud">
+  <h2>30°C</h2>
+  <h2>partly cloudly</h2>
+</div>
+
+<div class="col coll3 box">
+  <h2 class="day">Tomorrow</h2>
+  <p class="date">04/02</p>
+  <img src="assets/images/icons/sun.png" alt="sunny">
+  <h2>10°C</h2>
+  <h2>partly sunny</h2>
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<button type="button" class="btn"> <h2>Weekly Weather</h2></button>    
+
+<br> 
+
+<!--video -->
+
+<h1>Weather Forecast Video</h1>
+
+<div class="video">
+
+<video autoplay muted loop class="myVideo"> <source src="https://youtu.be/NpclEyDhk_I?t=20 " type="video/mp4">
+</video>
+
+</div>
+
+<br>
 
 <!--footer-->
 
@@ -128,12 +198,13 @@
 
 <div class="card-body bg-dark">
 
-<img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
+  <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
 
 <br><br>
- 
-<p class="card-text text-secondary " style="font-family: 'Source Sans Pro', sans-serif">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>
 
+ <!--catagories on the footer-->
+
+  <p class="card-text text-secondary " style="font-family: 'Source Sans Pro', sans-serif">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>
   <div class="Navlinks" style="font-family: 'Source Sans Pro', sans-serif;">
   <a class="nav-link text-white" href="#HOME">Home</a>
   <a class="nav-link text-white" href="#NEWS">News</a>
@@ -144,13 +215,17 @@
   <a class="nav-link text-white" href="#SUNWHEELS">SunWheels</a>
   <a class="nav-link text-white" href="#LIFESTYLE">Lifestyle</a>
   <a class="nav-link text-white" href="#LOTTO">Lotto</a>
+
 </div>
 
 <br>
 
+ <!--social media icons-->
+
 <div class="icon">
   
   <?xml version="1.0" encoding="UTF-8"?>
+
   <svg width="15%" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" >
   <path d="m297.28 508.67c-2.1328 0.34766-4.2734 0.66797-6.4219 0.96094 2.1484-0.29297 4.2891-0.61328 6.4219-0.96094z"/>
   <path d="m302.4 507.79c-1.0195 0.1875-2.0391 0.35938-3.0586 0.53516 1.0195-0.17578 2.0391-0.34766 3.0586-0.53516z"/>
@@ -165,26 +240,31 @@
   <path d="m272.91 511.43c-2.6641 0.17187-5.3398 0.30859-8.0234 0.39844 2.6836-0.089844 5.3594-0.22656 8.0234-0.39844z"/>
   <path d="m264.75 511.84c-1.4141 0.046874-2.832 0.082031-4.25 0.10547 1.418-0.023437 2.8359-0.058594 4.25-0.10547z"/>
   </svg>
+
   <?xml version="1.0" encoding="UTF-8"?>
+
   <svg width="15%" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm116.89 199.6c0.11328 2.5195 0.16797 5.0508 0.16797 7.5938 0 77.645-59.102 167.18-167.18 167.18h0.003906-0.003906c-33.184 0-64.062-9.7266-90.066-26.395 4.5977 0.54297 9.2773 0.8125 14.016 0.8125 27.531 0 52.867-9.3906 72.98-25.152-25.723-0.47656-47.41-17.465-54.895-40.812 3.582 0.6875 7.2656 1.0625 11.043 1.0625 5.3633 0 10.559-0.72266 15.496-2.0703-26.887-5.3828-47.141-29.145-47.141-57.598 0-0.26562 0-0.50391 0.007812-0.75 7.918 4.4023 16.973 7.0508 26.613 7.3477-15.777-10.527-26.148-28.523-26.148-48.91 0-10.766 2.9102-20.852 7.957-29.535 28.977 35.555 72.281 58.938 121.12 61.395-1.0078-4.3047-1.5273-8.7891-1.5273-13.398 0-32.438 26.316-58.754 58.766-58.754 16.902 0 32.168 7.1445 42.891 18.566 13.387-2.6406 25.957-7.5312 37.312-14.262-4.3945 13.715-13.707 25.223-25.84 32.5 11.887-1.4219 23.215-4.5742 33.742-9.2539-7.8633 11.785-17.836 22.137-29.309 30.43z"/>
   </svg>
+
   <?xml version="1.0" encoding="UTF-8"?>
+
   <svg  width="15%" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
   <path d="m256 0c-141.17 0-256 114.84-256 256s114.83 256 256 256 256-114.84 256-256-114.83-256-256-256zm101.77 264.97-149.33 96c-1.75 1.135-3.771 1.698-5.771 1.698-1.75 0-3.521-0.438-5.104-1.302-3.438-1.875-5.563-5.459-5.563-9.365v-192c0-3.906 2.125-7.49 5.563-9.365 3.375-1.854 7.604-1.74 10.875 0.396l149.33 96c3.042 1.958 4.896 5.344 4.896 8.969s-1.854 7.01-4.896 8.969z"/>
   </svg>
+
   <svg width="15%" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <path d="m305 256c0 27.062-21.938 49-49 49s-49-21.938-49-49 21.938-49 49-49 49 21.938 49 49z"/>
   <path d="m370.59 169.3c-2.3555-6.3828-6.1133-12.16-10.996-16.902-4.7422-4.8828-10.516-8.6406-16.902-10.996-5.1797-2.0117-12.961-4.4062-27.293-5.0586-15.504-0.70703-20.152-0.85938-59.402-0.85938-39.254 0-43.902 0.14844-59.402 0.85547-14.332 0.65625-22.117 3.0508-27.293 5.0625-6.3867 2.3555-12.164 6.1133-16.902 10.996-4.8828 4.7422-8.6406 10.516-11 16.902-2.0117 5.1797-4.4062 12.965-5.0586 27.297-0.70703 15.5-0.85938 20.148-0.85938 59.402 0 39.25 0.15234 43.898 0.85938 59.402 0.65234 14.332 3.0469 22.113 5.0586 27.293 2.3594 6.3867 6.1133 12.16 10.996 16.902 4.7422 4.8828 10.516 8.6406 16.902 10.996 5.1797 2.0156 12.965 4.4102 27.297 5.0625 15.5 0.70703 20.145 0.85547 59.398 0.85547 39.258 0 43.906-0.14844 59.402-0.85547 14.332-0.65234 22.117-3.0469 27.297-5.0625 12.82-4.9453 22.953-15.078 27.898-27.898 2.0117-5.1797 4.4062-12.961 5.0625-27.293 0.70703-15.504 0.85547-20.152 0.85547-59.402 0-39.254-0.14844-43.902-0.85547-59.402-0.65234-14.332-3.0469-22.117-5.0625-27.297zm-114.59 162.18c-41.691 0-75.488-33.793-75.488-75.484s33.797-75.484 75.488-75.484c41.688 0 75.484 33.793 75.484 75.484s-33.797 75.484-75.484 75.484zm78.469-136.31c-9.7422 0-17.641-7.8984-17.641-17.641s7.8984-17.641 17.641-17.641 17.641 7.8984 17.641 17.641c-0.003906 9.7422-7.8984 17.641-17.641 17.641z"/>
   <path d="m256 0c-141.36 0-256 114.64-256 256s114.64 256 256 256 256-114.64 256-256-114.64-256-256-256zm146.11 316.61c-0.71094 15.648-3.1992 26.332-6.832 35.684-7.6367 19.746-23.246 35.355-42.992 42.992-9.3477 3.6328-20.035 6.1172-35.68 6.832-15.676 0.71484-20.684 0.88672-60.605 0.88672-39.926 0-44.93-0.17188-60.609-0.88672-15.645-0.71484-26.332-3.1992-35.68-6.832-9.8125-3.6914-18.695-9.4766-26.039-16.957-7.4766-7.3398-13.262-16.227-16.953-26.035-3.6328-9.3477-6.1211-20.035-6.832-35.68-0.72266-15.68-0.89062-20.688-0.89062-60.609s0.16797-44.93 0.88672-60.605c0.71094-15.648 3.1953-26.332 6.8281-35.684 3.6914-9.8086 9.4805-18.695 16.961-26.035 7.3398-7.4805 16.227-13.266 26.035-16.957 9.3516-3.6328 20.035-6.1172 35.684-6.832 15.676-0.71484 20.684-0.88672 60.605-0.88672s44.93 0.17188 60.605 0.89062c15.648 0.71094 26.332 3.1953 35.684 6.8242 9.8086 3.6914 18.695 9.4805 26.039 16.961 7.4766 7.3438 13.266 16.227 16.953 26.035 3.6367 9.3516 6.1211 20.035 6.8359 35.684 0.71484 15.676 0.88281 20.684 0.88281 60.605s-0.16797 44.93-0.88672 60.605z"/>
   </svg>
-
 </div>
 
-<script src="js/weatherPage.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
 
+<script src="js/weatherPage.js"></script>
+</body>
 </html>

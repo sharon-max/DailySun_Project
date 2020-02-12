@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--discription meta tag-->
     <meta name="description" content=" Get Johannesburg weekly weather forecast.Weather conditions & reports, maps & severe weather alerts at a given location.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weatherPage.css">
@@ -13,49 +15,42 @@
   
 <!--navbar-->
 
-<nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+<!--navigation Bar-->
 
-<a class="navbar-brand col-8"    href="#"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
+<nav class="nav navbar navbar-expand-lg navbar-light bg-danger col-12" role="navigation">
+  <a class="navbar-brand col-8"    href="index.html"><img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="50%"></a>
 
 <div id="mySidenav" class="sidenav bg-dark text-center">
+
 <div class="card-body bg-dark">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-<br><br>
-
-  <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
-
-<br><br>
-
-  <a href="index.html">Latest News</a>
-
-<br>
-
-  <a href="weatherPage.html">Weather</a>
-
-<br>
-  <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>
-
- <br>
-
+      <br>
+  <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">  
+  <a href="index.html">Latest News</a>  
+  <a href="weather.html">Weather</a>   
+  <a href="https://www.dailysun.co.za/LIfestyle">Lifestyle</a>    
   <a href="opinionPage.html">Opinion</a>
-
+  <a class="nav-link text-white" href="#CELEBS">Celebs</a>
+  <a class="nav-link text-white" href="#SPORTS">Sports</a>
+  <a class="nav-link text-white" href="#SUN DEFENDER">Sun Defender</a>
+  <a class="nav-link text-white" href="#SUNWHEELS">SunWheels</a>
+  <a class="nav-link text-white" href="#LOTTO">Lotto</a>
 </div>
 
 </div>
-       
-<div class="navbar-brand col-4" id="menuToggle">
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
-</div>
+      
+    <div class="navbar-brand col-4" id="menuToggle">
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+      <span style="font-size:50px;cursor:pointer" onclick="openNav()"></span>
+    </div>
 </nav>
 
 <br><br><br>
 
-<h1 class="textt"> <img src="assets/images/icons/sun.svglogo.svg" alt="logo" width="40" height="40">6 days forecast for Johannesburg</h1> 
+<h1 class="textt"> <img src="assets/images/icons/sun.svglogo.svg" alt="logo" width="40" height="40">   6 days forecast for Johannesburg</h1> 
 <h2 class="forecast">Weekly Weather</h2>
-  
+  <!--
 <div class="container">
     
 <div class="row">
@@ -63,7 +58,7 @@
 <div class="col column1" >
   <h2> Monday</h2>
   <p class="date" >03/02</p class="date">
-  <img src="assets/images/icons/water.png" alt="">
+  <img src="assets/images/icons/water.png" alt="rain">
   <h2>30°C</h2>
   <h2>Rain</h2>
 </div>
@@ -71,7 +66,7 @@
 <div class="col column2">
   <h2> Tuesday</h2> 
   <p class="date">04/02</p>
-  <img src="assets/images/icons/sun.png" alt="">
+  <img src="assets/images/icons/sun.png" alt="sun">
   <h2>20°C</h2>
   <h2>partly sunny</h2>
 </div>
@@ -79,21 +74,21 @@
 <div class="col column3">
 <h2>Wednesday</h2> 
   <p class="date">05/02</p>
-  <img src="assets/images/icons/cloud.png" alt="">
+  <img src="assets/images/icons/cloud.png" alt="cloud">
   <h2>30°C</h2>
   <h2>partly clouldy</h2>
 </div>
 
 </div>
 
-
+<br>
 
 <div class="row">
 
 <div class="col column1" >
   <h2>Thursday</h2>
   <p class="date" >06/02</p class="date">
-  <img src="assets/images/icons/sun.png" alt="">
+  <img src="assets/images/icons/sun.png" alt="sun">
   <h2>25°C</h2>
   <h2>partly sunny</h2>
 </div>
@@ -101,7 +96,7 @@
 <div class="col column2">
   <h2> Friday</h2>
   <p class="date">07/02</p>
-  <img src="assets/images/icons/water.png" alt="">
+  <img src="assets/images/icons/water.png" alt="rain">
   <h2>30°C</h2>
   <h2>Rain</h2>
 </div>
@@ -109,7 +104,7 @@
 <div class="col column3">
   <h2> Saturday</h2>
   <p class="date">08/02</p>
-  <img src="assets/images/icons/cloud.png" alt="">
+  <img src="assets/images/icons/cloud.png" alt="cloud">
   <h2>17°C</h2>
   <h2>partly clouldy</h2>
 </div>
@@ -120,16 +115,84 @@
 
 <br>
 
+-->
 
+
+<div class="container">
+    
+  <div class="row">
+  
+  <div class="col column1 box" >
+    <h2 class="day">Monday</h2>
+    <p class="date" >09/02</p class="date">
+    <img src="assets/images/icons/water.png" alt="rain"> 
+    <h2>30°C</h2>
+    <h2> Mostly Rain</h2>
+  </div>
+  
+  <div class="col column2 box">
+    <h2 class="day">Tuesday</h2>
+    <p class="date">10/02</p>
+    <img src="assets/images/icons/water.png" alt="rain">
+    <h2>14C</h2>
+    <h2>Luckly Rainy</h2>
+  </div>
+  
+  <div class="col column3 box">
+    <h2 class="day">Wednesday</h2>
+    <p class="date">11/02</p>
+    <img src="assets/images/icons/sun.png" alt="sunny">
+    <h2>25°C</h2>
+    <h2>partly sunny</h2>
+  </div>
+  
+  </div>
+  
+  </div>
+  <br>
+
+  <div class="container">
+    
+    <div class="row">
+    
+    <div class="col column1 box" >
+      <h2 class="day">Thursday</h2>
+      <p class="date" >12/02</p class="date">
+      <img src="assets/images/icons/water.png" alt="rain"> 
+      <h2>30°C</h2>
+      <h2> Mostly Rain</h2>
+    </div>
+    
+    <div class="col column2 box">
+      <h2 class="day">Friday</h2>
+      <p class="date">13/02</p>
+      <img src="assets/images/icons/water.png" alt="rain">
+      <h2>14C</h2>
+      <h2>Luckly Rainy</h2>
+    </div>
+    
+    <div class="col column3 box">
+      <h2 class="day">Saturday</h2>
+      <p class="date">14/02</p>
+      <img src="assets/images/icons/sun.png" alt="sunny">
+      <h2>25°C</h2>
+      <h2>partly sunny</h2>
+    </div>
+    
+    </div>
+    
+    </div>  
+    <br>
+  
 
 <!--footer-->
 
 <div class="card text-center iconColor">
 
 <div class="card-body bg-dark">
-
+<a href="index.html">
 <img src="assets/images/svgImages/DailySunLogo.png" alt="logo" width="25%">
-
+</a>
 <br><br>
  
 <p class="card-text text-secondary " style="font-family: 'Source Sans Pro', sans-serif">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>

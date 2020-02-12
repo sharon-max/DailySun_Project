@@ -1,10 +1,3 @@
-// const popUp = document.getElementById("myPopUp");
-
-// Get the button that opens the modal
-// const btn = document.getElementById("myButto");
-
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
 
 // this is for the first card
 
@@ -12,10 +5,7 @@ const Art= document.getElementsByClassName("fullArticle");
 
 
 
-// // When the user clicks the button, open the form 
-// btn.onclick = function() {
-//   form.style.display = "block";
-// }
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

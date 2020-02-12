@@ -1,19 +1,12 @@
 
 // Get the <span> element that closes the modal
-const close = document.getElementsByClassName("pop-content")[0];
-const popUp = document.getElementById("mypopUp")
+const close = document.querySelector(".pop-content");
+const zip = document.querySelector(".zip");
 
 // When the user clicks on <span> (x), close the popup
-// span.onclick = function() {
-//   popUp.style.display = "none";
-// }
-close.addEventListener('click', ()=>{
+zip.onclick = function() {
   close.style.display = "none";
-});
-
-// window.onclick = function(event){ if(event.target == popUp){
-//   popUp.style.display = "none";}
-// }
+}
 
 
 const popup = document.querySelector('.pop-content');

@@ -1,16 +1,16 @@
 h2{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 h1{
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 p{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 /* a{
   font-family: 'Source Sans Pro', sans-serif;
@@ -21,7 +21,7 @@ p{
   position: relative;
   padding: 4px;
   border-radius: 20px;
-  background-color: rgb(255, 174, 0);
+  background-color:  yellow;
   width: 150px;
 }
 /* Navbar and footer style */
@@ -33,8 +33,28 @@ p{
 }
 
 .icon{
-    fill: rgb(255, 174, 0);
+    fill: yellow;
 }
+.i1{
+  position: relative;
+  left: -15px;
+}
+
+.i2{
+  position: relative;
+  left: -5px;
+}
+
+.i3{
+  position: relative;
+  left: 5px;
+}
+
+.i4{
+  position: relative;
+  left: 15px;
+}
+
 
 #menuToggle
   {

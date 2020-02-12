@@ -104,32 +104,35 @@ padding-left: 10px;
   font-weight: 500;
 
 }
-
+  .popUp{
+    background-color: yellow;
+  }
 
   .pop-content{
     position: fixed; /* Stay in place */
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color:orange; /* Fallback color */
-    margin: auto;
+    width: 92vw;
+    height: 96vh;
+    background-color: lightgrey; /* Fallback color */
+    margin-left: 15px;
+    margin-top: 12px;
     padding: 5px;
     z-index: 5;
     padding-left: 20px;
-    
   }
   
   /* The Close Button */
-   .close {
+   .zip {
     color: black;
     float: right;
     font-size: 45px;
     font-weight: bold;
+    margin-right: 15px;
   }
   
-  .close:hover,
-  .close:focus {
-    color: red;
+  .zip:hover,
+  .zip:focus {
+    color:red;
     text-decoration: none;
     cursor: pointer;
   }
@@ -137,5 +140,17 @@ padding-left: 10px;
     text-align: center;
   }
  
+  .bbt{
+    height: 40px;
+    width: 294px;
+    background-color:yellow;
+  }
   
-  
+  .input1{
+    height: 40px;
+    width: 294px;
+  }
+
+  .pp{
+    margin-left: 70px;
+  }

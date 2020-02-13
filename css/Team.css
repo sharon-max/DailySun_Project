@@ -12,6 +12,12 @@ p{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.75em;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
 /* a{
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;

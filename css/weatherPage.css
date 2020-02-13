@@ -1,9 +1,9 @@
 
 
 .head{
-  text-align: left;
+  text-align: center;
   color: black;
-  top: 280px;
+  top: 265px;
   position: relative;
   
 }
@@ -12,16 +12,16 @@
     bottom: 50px;
 }
 .column1{
-    background-color:grey;
+    background-color:lightgray;
     width: 20vw;
 }
 
 .column2{
-    background-color:grey;
+    background-color:lightgray;
 }
 
 .column3{
-    background-color:grey;
+    background-color:lightgray;
 }
 
 .textt{
@@ -74,6 +74,10 @@
 .iconColor{
   fill: yellow;
 }
+.icon1{
+    position: relative;
+    right: 10px;
+}
 
 .forecast{
     font-size: 20px;
@@ -101,11 +105,6 @@
 
 /*video*/
 
-
-
-
-
-
 .video{
     width: 100vw;
     height:50vh;
@@ -119,7 +118,7 @@
 .gradient{
   background: linear-gradient(180deg, rgb(238, 229, 229,0) 0%, rgb(255, 255, 255,0.1) 50%, rgb(255, 255, 255) 100%);
   width: 100vw;
-  height: 45vh;
+  height: 42vh;
   position: absolute;
   top:0px;
 }

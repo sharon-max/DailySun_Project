@@ -24,8 +24,6 @@
       background: black;
   }
 
-
-
   /* ide scroll styling */
    .scrolling-wrapper {
     overflow-x: scroll;
@@ -36,6 +34,7 @@
   .scrolling-wrapper::-webkit-scrollbar {
     display: none;
   }
+
   .ssNews {
     display: inline-block;
     width: 60vw;
@@ -52,6 +51,7 @@
   .text2{
     position: relative;
     padding-left: 7px;
+    margin-top: 30px;
   }
 
   .btn1{
@@ -62,37 +62,19 @@
   }
   .b1{
     position: relative;
-    top: 4px;
+    top: 3px;
   }
-/* 
-  .row1{
-    position: relative;
-  } */
 
   .img{
     position: relative;
     width: 30%;
-    padding-left: 10px;
+    margin-left: 0px;
 
   }
  
 .text-muted{
   color: #000;
 }
- 
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-/* This is for the positioning of the Close Link */
-/* .popUp{
-position: absolute;
-height: 100vh;
-width: 100vw;
-z-index: 5;
-padding-left: 10px;
-} */
 
 #popupBoxClose {
   font-size: 20px;
@@ -104,21 +86,24 @@ padding-left: 10px;
   font-weight: 500;
 
 }
-  .popUp{
-    background-color: yellow;
-  }
-
+  
   .pop-content{
     position: fixed; /* Stay in place */
     top: 0;
-    width: 92vw;
-    height: 96vh;
-    background-color: lightgrey; /* Fallback color */
-    margin-left: 15px;
-    margin-top: 12px;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey; /* Fallback color */
     padding: 5px;
     z-index: 5;
     padding-left: 20px;
+  }
+
+  .popUp{
+    background-color:lightgrey;
+    margin-left: -3px;
+    margin-top: 15px;
+    width: 90vw;
+    height: 94vh;
   }
   
   /* The Close Button */
@@ -141,16 +126,19 @@ padding-left: 10px;
   }
  
   .bbt{
-    height: 40px;
-    width: 294px;
     background-color:yellow;
-  }
-  
-  .input1{
+    position: relative;
     height: 40px;
     width: 294px;
+    margin-left: 15px;
+  }
+  .input1{
+    position: relative;
+    height: 40px;
+    width: 294px;
+    margin-left: 15px;
+}
+  .pp{
+    margin-left: 50px;
   }
 
-  .pp{
-    margin-left: 70px;
-  }

@@ -1,0 +1,140 @@
+.card-body{
+    
+  background:lightgray;
+  width: 100%;
+  
+}
+
+a:active{
+text-decoration: none;
+}
+
+.heading{
+  position: relative;
+  bottom: 4px;
+}
+
+.Picture1{ 
+height: 10%;
+}
+
+
+.myButto{
+position: relative;
+left: 100px;
+bottom:12px;
+}
+
+
+.submit{
+position: relative;
+left: 50px;;
+height: 20%;
+text-align: center;
+font-weight: bold;
+
+}
+
+input[type=text], select {
+width: 50%;
+padding: 14px 20px;
+right: 50px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+
+
+.SubmitB{
+  position: relative;
+  top:20px;
+}
+
+
+/* .inputone{
+ height:40px ;
+ width: 294;
+} */
+
+
+.form{
+  background: lightgray;
+}
+
+.form-heading{
+  position: relative;
+  padding-left: 15px;
+}
+
+
+
+#fname{
+position: relative;
+bottom: 10px;
+height:40px ;
+width: 90%;
+background: white;
+left: 20px;
+
+
+}
+
+#lname{
+position: relative;
+bottom: 10px;
+height:40px;
+width: 90%;
+background:white;
+left: 20px;
+
+
+}
+#Tname{
+position: relative;
+bottom: 10px;
+height:40px ;
+width: 90%;
+background: white;
+left: 20px;
+
+
+}
+
+#lopp{
+position: relative;
+bottom: 10px;
+width: 90%;
+background: white;
+left: 20px;
+height: 40vh;
+
+}
+
+
+.Upload{
+  position: relative;
+  width: 90%;
+  height: 40px;
+  left: 20px;
+  bottom: 10px;
+}
+
+
+.SubmitF {
+  position: relative;
+  text-align: center;
+  background: yellow;
+  height:40px;
+  width: 90%;
+  bottom: 05px;
+  left: 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  }
+
+ .back{
+   position: relative;
+   top: 10px;
+ }

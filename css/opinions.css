@@ -9,6 +9,12 @@ a:active{
 text-decoration: none;
 }
 
+.card-body{
+  color: black;
+}
+.card-text{
+  color: black;
+}
 .heading{
   position: relative;
   bottom: 4px;
@@ -52,14 +58,7 @@ box-sizing: border-box;
   top:20px;
 }
 
-
-/* .inputone{
- height:40px ;
- width: 294;
-} */
-
-
-.form{
+.formA{
   background: lightgray;
 }
 

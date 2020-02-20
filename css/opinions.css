@@ -137,3 +137,20 @@ height: 40vh;
    position: relative;
    top: 10px;
  }
+
+ table, th, td {
+  border: 1px solid black;
+}
+
+.flag{
+  width: 20px;
+  height: auto;
+}
+
+.rates {
+  position: relative;
+  text-align: center;
+
+  
+}
+

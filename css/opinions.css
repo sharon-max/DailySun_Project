@@ -6,7 +6,7 @@
 }
 
 a:active{
-text-decoration: none;
+text-decoration:none;
 }
 
 .card-body{
@@ -32,14 +32,6 @@ bottom:12px;
 }
 
 
-.submit{
-position: relative;
-left: 50px;;
-height: 20%;
-text-align: center;
-font-weight: bold;
-
-}
 
 input[type=text], select {
 width: 50%;
@@ -52,11 +44,6 @@ box-sizing: border-box;
 }
 
 
-
-.SubmitB{
-  position: relative;
-  top:20px;
-}
 
 .formA{
   background: lightgray;
@@ -136,6 +123,7 @@ height: 40vh;
  .back{
    position: relative;
    top: 10px;
+   left: 80px;
  }
 
  table, th, td {

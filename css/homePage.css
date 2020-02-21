@@ -1,62 +1,69 @@
 /* Make the image fully responsive */
 .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .video{
-      width: 100vw;
-      height: 50vh;
-      overflow: hidden;
-  }
-  .myVideo{
-      height: 70vh;
-  }
-  .gradient{
-    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgb(0, 0, 0, 1) 100%);
-    width: 100vw;
-    height: 50vh;
-    position: absolute;
-    top: 0;
-  }
+.video{
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
 
-  .black{
-      background: black;
-  }
+.myVideo{
+  height: 70vh;
+}
 
-  /* ide scroll styling */
-   .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-  .scrolling-wrapper::-webkit-scrollbar {
-    display: none;
-  }
+/* added style to gradient */
+.gradient{
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgb(0, 0, 0, 1) 100%);
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+}
 
-  .ssNews {
-    display: inline-block;
-    width: 60vw;
-    height: 40vh;
-    margin: 10px;
-    color: white;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+.black{
+  background: black;
+}
 
-  .text1{
-      position: absolute;
-      top: -170px;
-      white-space: initial;
-      
-  }
+/* ide scroll styling */
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
 
-  .text2{
-    position: relative;
-    padding-left: 7px;
-    margin-top: 30px;
-  }
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.ssNews {
+  display: inline-block;
+  width: 60vw;
+  height: 40vh;
+  margin: 10px;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text1{
+  position: absolute;
+  top: -170px;
+  white-space: initial;     
+}
+
+.text2{
+  position: relative;
+  padding-left: 7px;
+  margin-top: 30px;
+}
+
+.text3{
+  white-space: initial;
+}
 
   .btn1{
       position: relative;
@@ -147,7 +154,6 @@
   }
 
 h2{
-
   white-space: initial;
 }
 

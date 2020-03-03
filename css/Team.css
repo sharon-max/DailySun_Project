@@ -126,3 +126,70 @@ a {
     .sidenav a {font-size: 18px;}
   }
 
+
+  .pop-content{
+    position: fixed; /* Stay in place */
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey; /* Fallback color */
+    padding: 5px;
+    z-index: 5;
+    padding-left: 20px;
+  }
+
+  .popUp{
+    background-color:lightgrey;
+    margin-left: -3px;
+    margin-top: 15px;
+    width: 90vw;
+    height: 94vh;
+  }
+
+  /* The Close Button */
+  .zip {
+    color: black;
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .c2{
+    text-align: center;
+  }
+
+  .bbt{
+    background-color:yellow;
+    position: relative;
+    height: 40px;
+    width: 294px;
+    margin-left: 15px;
+  }
+
+  .bbt1{
+    background-color: grey;
+    position: relative;
+    height: 40px;
+    width: 294px;
+    margin-left: 15px;
+  }
+  .input1{
+    position: relative;
+    height: 40px;
+    width: 294px;
+    margin-left: 15px;
+}
+  .pp{
+    margin-left: 50px;
+  }
+
+h2{
+  white-space: initial;
+}
+  /* .login{
+    column-count: 3;
+    text-align: center;
+    position: sticky;
+    color: wheat;
+    fill: white;    
+  } */

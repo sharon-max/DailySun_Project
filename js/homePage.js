@@ -16,7 +16,7 @@ const getNewsData = async () =>{
   .then(data =>{
     const newsData = data;
     const articles = newsData.articles;
-    console.log(newsData);
+    // console.log(newsData);
 
     for(i = 0; i < 10; i++){
 
@@ -54,7 +54,7 @@ const getNews = async () =>{
   getNews()
   .then(data =>{
     const newsData = data;
-    console.log(newsData);
+    // console.log(newsData);
     const articles = newsData.articles;
  
     for(i = 0; i < 10; i++){
@@ -76,6 +76,9 @@ const getNews = async () =>{
   };
 
 }).catch(err => console.log(err));
+
+
+
 
 
 

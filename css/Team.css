@@ -183,6 +183,15 @@ a {
       width: 294px;
       margin-left: 15px;
     }
+
+    .bbt1{
+      background-color: grey;
+      position: relative;
+      height: 40px;
+      width: 294px;
+      margin-left: 15px;
+    }
+
     .input1{
       position: relative;
       height: 40px;

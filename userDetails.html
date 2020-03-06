@@ -16,33 +16,40 @@
   </head>
   <body>
 
-    <div class="pop-content">
-        <div class="popUp">
-          <br><br><br>
-          <img class="pp" src="assets/images/DailySunLogo.png" alt="logo" width="70%">
-          <br><br>
-          <h1 class="c2">Get started with your account</h1>
-          <h2 class="c2" style="font-weight: bold;">Sign up</h2>
-  
-          <br>
-       
-          <form>
-          
-            <input class="input1 c2 email" type="text" id="e-mail" name="e-mail" placeholder="Email address">
-            <br><br>
-            <input class="input1 c2 Password" type="text" id="Password" name="Password" placeholder="Password">
-            <br><br>
-            <button class="bbt c2 submit" type="submit"><h2>Submit</h2></button>
-            <br>
-          </form>
-          <br>
-          <p class="card-text text-secondary  c2">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>
-        </div>
-     </div>
 
-<!--loginform-->
-     <div class="pop-content">
+    <!-- SignUp form -->
+
+    <div class="pop-content">
       <div class="popUp">
+        <br><br><br>
+        <img class="pp" src="assets/images/DailySunLogo.png" alt="logo" width="70%">
+        <br><br>
+        <h1 class="c2">Get started with your account</h1>
+        <h2 class="c2 msg" style="font-weight: bold;">Sign up</h2>
+        <br>
+      <form class="signin">
+        <P otherMsg></P>
+        <input class="input1 c2" type="text" id="e-mail" name="e-mail" placeholder="username">
+        <br><br>
+        <input class="input1 c2" type="text" id="Password" name="Password" placeholder="Password">
+        <br><br>
+        <button class="bbt c2" type="submit"><h2>Submit</h2></button>
+        <br>
+      </form>
+      <br>
+      <p class="card-text text-secondary  c2">COPYRIGHT 2020 DAILY SUN WOWINTECH
+      </p>
+      </div>
+    </div>
+    
+
+    <br><br><br>
+
+    <!-- logIn form -->
+
+    <div class="pop-content d-none">
+      <div class="popUp signDiv">
+
         <br><br>
         <img class="pp" src="assets/images/DailySunLogo.png" alt="logo" width="70%">
         <br><br>
@@ -50,21 +57,27 @@
         <h2 class="c2" style="font-weight: bold;">Log in</h2>
 
         <br>
-     
-        <form>
-          <input class="input1 c2 username" type="text" id="e-mail" name="e-mail" placeholder="Email address">
+        <form class="form login">
+          <input class="input1 c2" type="text" id="" name="e-mail" placeholder="username">
           <br><br>
-          <input class="input1 c2 Password" type="text" id="Password" name="Password" placeholder="Password">
+          <input class="input1 c2" type="text" id="Password" name="Password" placeholder="Password">
           <br><br>
-          <button class="bbt c2 submit" type="submit"><h2>Login</h2></button>
-          <br><br>
-          
+          <input class="bbt c2" type="button" value="Login" id="submit" onclick="validate()">
+          <br>
+
         </form>
         <br>
         <p class="card-text text-secondary  c2">COPYRIGHT 2020 DAILY SUN WOWINTECH</p>
       </div>
-   </div>
+    </div>
 
+    
+    <br><br>
+
+    <!-- logout -->
+
+    <button class="logout bbt c2" type="submit">logout</button>
+  </div>  
 
 
   <!-- Optional JavaScript -->
@@ -74,10 +87,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- js link -->
-
     <script src="js/signinW.js"></script>
-
-
 
   </body>
 </html>

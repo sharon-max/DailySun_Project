@@ -19,7 +19,7 @@
 
     <!-- SignUp form -->
 
-    <div class="pop-content">
+    <div id="signup" class="pop-content">
       <div class="popUp">
         <br><br><br>
         <img class="pp" src="assets/images/DailySunLogo.png" alt="logo" width="70%">
@@ -28,12 +28,13 @@
         <h2 class="c2 msg" style="font-weight: bold;">Sign up</h2>
         <br>
       <form class="signin">
-        <P otherMsg></P>
-        <input class="input1 c2" type="text" id="e-mail" name="e-mail" placeholder="username">
+        <P class="otherMsg"></P>
+        <input class="input1 c2" type="text" id="e-mail" name="username" placeholder="username">
         <br><br>
         <input class="input1 c2" type="text" id="Password" name="Password" placeholder="Password">
         <br><br>
         <button class="bbt c2" type="submit"><h2>Submit</h2></button>
+        <div class="ms"></div>
         <br>
       </form>
       <br>
@@ -47,7 +48,7 @@
 
     <!-- logIn form -->
 
-    <div class="pop-content d-none">
+    <div id="login" class="pop-content d-none">
       <div class="popUp signDiv">
 
         <br><br>
@@ -58,7 +59,8 @@
 
         <br>
         <form class="form login">
-          <input class="input1 c2" type="text" id="" name="e-mail" placeholder="username">
+          <P class="otherMsg"></P>
+          <input class="input1 c2" type="text" id="username" name="username" placeholder="username">
           <br><br>
           <input class="input1 c2" type="text" id="Password" name="Password" placeholder="Password">
           <br><br>
@@ -76,7 +78,7 @@
 
     <!-- logout -->
 
-    <button class="logout bbt c2" type="submit">logout</button>
+    <!-- <button class="logout bbt c2" type="submit">logout</button> -->
   </div>  
 
 
@@ -87,7 +89,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- js link -->
-    <script src="js/signinW.js"></script>
+    <script src="js/userDetail.js"></script>
 
   </body>
 </html>

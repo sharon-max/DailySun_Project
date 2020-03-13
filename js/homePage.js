@@ -161,7 +161,7 @@ const form1 = document.querySelector('form');
 
 const addLatest = (World, id) => {
 
-    let time = (World.created_at.toDate());
+    // let time = (World.created_at);
 
     let html = `
     <div data-id="${id}" id="articleOne" class="row no-gutters">
@@ -170,9 +170,8 @@ const addLatest = (World, id) => {
           <h2 class="card-text">${World.description}</h2>
           <br>
           <p class="card-text">${World.author}</p>
-          <p class="card-text"><small class="text-muted">${time}</small></p>
         </div>
-      <button class="btn btn1 btn-md my-2">delete</button>
+      <button class=" btn btn-sm my-2"5 ">delete</button>
     </div>
     `;
 
@@ -260,11 +259,11 @@ subb.addEventListener('click', e => {
 // adding documents
 form.addEventListener('submit', e => {
   e.preventDefault();
-  const now = new Date();
+  // const now = new Date();
   const Subscribers = {
 
       email: form.subscribe.value,
-      created_at: firebase.firestore.Timestamp.fromDate(now)
+      // created_at: firebase.firestore.Timestamp.fromDate(now)
   };
 
   db.collection('Subscribers').add(Subscribers).then(() =>{

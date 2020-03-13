@@ -10,7 +10,7 @@ const addOpinions = (Opinions, id) => {
     <div data-id="${id}"style="text-align: center; padding-top:2;">
     <img src="${Opinions.Image}" class="card-img-top" alt="Potrait of Mrs Suzen Lee"><br>
     <p>${Opinions.Date}</P>
-    <h2>${Opinions.Description}</h2>
+    <p>${Opinions.Description}</p>
    
     <button class="btn  c2 btn-sm my-2">delete</button>
     </div>
@@ -72,21 +72,21 @@ list.addEventListener('click', e => {
 //collection 2
 const employ = document.querySelector('#employmentSec');
 
-const addEmployment = (EmploymentOpportunities, id) => {
+const addEmployment = (Employment, id) => {
 
     // let disk = EmploymentOpportunitie.JobDescription;
     // let loca = EmploymentOpportunitie.Location;
     // console.log('id');
 
 
-    let time = (EmploymentOpportunities.created_at);
+    let time = (Employment.created_at);
 
     let html = `
-    <div data-id="${id}">
+    <div data-id="${id}" style="margin:20px">
 
-          <h2 class="card-text">${EmploymentOpportunities.Location}</h2>
-          <p>${EmploymentOpportunities.JobDescription}</P>
-          <p class="card-text"><small class="text-muted">${time}</small>
+          <h2 "style="text-align: center; padding-top:2;"  >${Employment.Location}</h2>
+          <p>${Employment.Job}</P>
+          <p class="card-text"><small class="text-muted">${Employment.Date}</small>
           </p>
     </div>
     `;
@@ -97,7 +97,7 @@ const addEmployment = (EmploymentOpportunities, id) => {
 }
 
 
-db.collection('EmploymentOpportunities').get().then((snapshot) => {
+db.collection('Employment').get().then((snapshot) => {
     // do something when we have the data
     // console.log(snapshot.docs[0].data());
     snapshot.docs.forEach(doc => {

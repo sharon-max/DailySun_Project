@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Team.css">
+   
+    <title>database</title>
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="Seasons">
+    <h1>Seasons</h1>
+    <ul>
+      </h2></h2>
+        <img src="" alt=""  class="seasonPic">
+      <br>
+    </ul>  
+</div>
+
+<br>
+  
+  
+<div class="cities">
+    
+</div>
+  
+<br>
+
+<div class="terms">
+    <h1>Weather Terms</h1>
+</div>
+  
+<form>
+    <label for="recipe">Add a new term</label>
+<div class="input-group">
+
+    <input id="userterm" type="text" class="form-control" placeholder="title">
+
+    <input id="userterms" type="text" class="form-control" placeholder="description" >
+
+<div class="input-group-append">
+
+    <input value="add" type="submit" class="btnn btn btn-outline-secondary">
+</div>
+</div>
+</form>
+
+
+
+<!--subscribe-->
+
+<form class="formS">
+    
+<div class="container">
+    <h1>Subscribe to our Newsletter</h1>
+    <p>Subscribe to our newsletter to get more notificatons and news everytime
+    </p>
+</div>
+
+<div class="input-group">
+
+    <input id="subscriber" type="text" class="form-control" placeholder="E-mail">
+
+<div class="input-group-append">
+
+    <input value="add" type="submit" class="btnn  btn btn-outline-secondary">
+</div>
+</div>
+</form>
+
+</div>
+  <!--database-->
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAKVA_pJ9VsNGe1SfVXDCXj0P6gzNxh73E",
+      authDomain: "dailysun-project.firebaseapp.com",
+      databaseURL: "https://dailysun-project.firebaseio.com",
+      projectId: "dailysun-project",
+      storageBucket: "dailysun-project.appspot.com",
+      messagingSenderId: "528054090723",
+      appId: "1:528054090723:web:c8d1337948453f0d65fed6",
+      measurementId: "G-0LBWVVMWH3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db= firebase.firestore();
+    firebase.analytics();
+  </script>
+  
+  
+
+<script src="js/dataBaseWeather.js"></script>
+</body>
+</html>

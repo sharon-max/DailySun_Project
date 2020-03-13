@@ -35,7 +35,7 @@ const button = document.querySelector('.login');
      window.open('http://127.0.0.1:5500/userDetails.html')
  });
 
- const butto = document.querySelector('.signup');
- butto.addEventListener('click', ()=>{
-     window.open('http://127.0.0.1:5500/userDetails.html')
- });
+//  const butto = document.querySelector('.signup');
+//  butto.addEventListener('click', ()=>{
+//      window.open('http://127.0.0.1:5500/userDetails.html')
+//  });

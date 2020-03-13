@@ -34,10 +34,10 @@ const button = document.querySelector('.bbt');
 const log = document.querySelector('#login')
  button.addEventListener('click', e =>{
    e.preventDefault();
-     log.style.display='block'
- });
-
- const butto = document.querySelector('.signup');
- butto.addEventListener('click', ()=>{
      window.open('http://127.0.0.1:5500/userDetails.html');
  });
+
+//  const butto = document.querySelector('.signup');
+//  butto.addEventListener('click', ()=>{
+//      window.open('http://127.0.0.1:5500/userDetails.html');
+//  });

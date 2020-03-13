@@ -70,6 +70,7 @@
       bottom: 4px;
       left:105px;
       width: 150px;
+      
   }
   .b1{
     position: relative;
@@ -87,6 +88,14 @@
   color: #000;
 }
 
+.lo{
+  position: relative;
+  left: 250px;
+  bottom: 4px;
+  width: 80px;
+}
 
-
+#me{
+  display: none;
+}
 

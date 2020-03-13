@@ -63,6 +63,8 @@ signin.reset();
 
 });
 
+// logout 
+
 logout.addEventListener('click',()=>{
     localStorage.setItem('login', 'false');
     msg.innerHTML='you are logged out'

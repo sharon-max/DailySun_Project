@@ -16,7 +16,7 @@ const getNewsData = async () =>{
   .then(data =>{
     const newsData = data;
     const articles = newsData.articles;
-    // console.log(newsData);
+        
 
     for(i = 0; i < 10; i++){
 
@@ -78,108 +78,199 @@ const getNews = async () =>{
 }).catch(err => console.log(err));
 
 
+// Political news from firebase database
+const list = document.querySelector('.politics1');
+
+const addPolitics = (Politics, id) => {
+
+    // console.log(recipe.created_at.toDate());
+    let time = (Politics.created_at.toDate());
+
+    let html = `
+    <div data-id="${id}" id="articleOne" class="row no-gutters">
+      <img class="img col-12" src="${Politics.image}" alt="#">
+
+      <div class="col-11">
+        <div class="card-body">
+          <h2 class="card-text">${Politics.description}</h2>
+          <p class="card-text"><small class="text-muted">${time}</small></p>
+        </div>
+      </div>
+    </div>
+    `;
+
+    list.innerHTML += html
+
+    // console.log(html);
+}
+
+db.collection('Politics News').get().then((snapshot) =>{
+    // do something when we have the data
+    snapshot.docs.forEach(doc => {
+        console.log(doc.id);
+
+        addPolitics(doc.data(), doc.id);
+        
+    });
+
+}).catch(err =>{
+    console.log(err);
+});
+
+
+// Gossip section from firebase database
+const gossip = document.querySelector('.gossipNews');
+
+const addGossip = (Gossip, id) => {
+
+    // console.log(recipe.created_at.toDate());
+
+    let html = `
+    <div data-id="${id}" id="articleOne" class="row no-gutters">
+      <img class="img col-12" src="${Gossip.image}" alt="#" height="50%">
+
+      <div class="col-11">
+        <div class="card-body">
+          <h2 class="card-text">${Gossip.description}</h2>
+          <p class="card-text"><small class="text-muted">${Gossip.source}</small></p>
+        </div>
+      </div>
+    </div>
+    `;
+
+    gossip.innerHTML += html
+
+}
+db.collection('Gossip News').get().then((snapshot) =>{
+    // do something when we have the data
+    snapshot.docs.forEach(doc => {
+        console.log(doc.id);
+
+        addGossip(doc.data(), doc.id);
+        
+    });
+
+}).catch(err =>{
+    console.log(err);
+});
 
 
 
+// World breaking News from firebase database 
+const write = document.querySelector('.worldNews');
+const form1 = document.querySelector('form');
 
-// const political = document.querySelector('#politics1');
-// const article = document.querySelector('#politics2');
-// const articleO = document.querySelector('#politics3');
-// const articleT = document.querySelector('#politics4');
-// const articleTh = document.querySelector('#politics5');
-// const articleF = document.querySelector('#politics6');
-// const articleSix = document.querySelector('#politics7');
-// const articleS = document.querySelector('#politics8');
-// const articleN = document.querySelector('#politics9');
-// const articleTen = document.querySelector('#politics10');
+const addLatest = (World, id) => {
 
+    // let time = (World.created_at.toDate());
 
-// articleOne.innerHTML =`
-//   <img class="img col-5" src="${newsData.articles[3].urlToImage}" class="card-img" alt="group-of-people">
-//   <div class="col-7">
-//     <div class="card-body">
-//       <h2 class="card-text">${newsData.articles[3].description}</h2>
-//       <p class="card-text"><small class="text-muted">${newsData.articles[3].publishedAt}</small></p>
-//     </div>
-//   </div>`;
+    let html = `
+    <div data-id="${id}" id="articleOne" class="row no-gutters">
+      <h1 class="text2"><small>${World.title}</small></h1>
+        <div class="card-body">
+          <h2 class="card-text">${World.description}</h2>
+          <br>
+          <p class="card-text">${World.author}</p>
+        </div>
 
- // articleO.innerHTML =`
-    // <div id="politics3" class="ssNews">
-    // <img src="${newsData1.articles[7].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[7].description}</h2>
-    // <p>${newsData1.articles[7].publishedAt}</p>
-    // </div>`;
+      <button class="btn btn1 btn-md my-2">delete</button>
+    </div>
+    `;
 
-    // articleT.innerHTML =`
-    // <div id="politics4" class="ssNews">
-    // <img src="${newsData1.articles[14].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[14].description}</h2>
-    // <p>${newsData1.articles[14].publishedAt}</p>
-    // </div>`;
+    write.innerHTML += html
 
-    // articleTh.innerHTML =`
-    // <div id="politics5" class="ssNews">
-    // <img src="${newsData1.articles[5].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[5].description}</h2>
-    // <p>${newsData1.articles[5].publishedAt}</p>
-    // </div>`;
+}
 
-    // articleF.innerHTML =`
-    // <div id="politics6" class="ssNews">
-    // <img src="${newsData1.articles[6].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[6].description}</h2>
-    // <p>${newsData1.articles[6].publishedAt}</p>
-    // </div>`;
-
-    // articleSix.innerHTML =`
-    // <div id="politics7" class="ssNews">
-    // <img src="${newsData1.articles[1].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[1].description}</h2>
-    // <p>${newsData1.articles[1].publishedAt}</p>
-    // </div>`;
-
-    // articleS.innerHTML =`
-    // <div id="politics8" class="ssNews">
-    // <img src="${newsData1.articles[18].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[18].description}</h2>
-    // <p>${newsData1.articles[18].publishedAt}</p>
-    // </div>`;
-
-    // articleN.innerHTML =`
-    // <div id="politics9" class="ssNews">
-    // <img src="${newsData1.articles[19].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[19].description}</h2>
-    // <p>${newsData1.articles[19].publishedAt}</p>
-    // </div>`;
-
-    // articleTen.innerHTML =`
-    // <div id="politics10" class="ssNews">
-    // <img src="${newsData1.articles[12].urlToImage}" width="100%" height="50%" alt="trump"> <br><br>
-    // <h2>${newsData1.articles[12].description}</h2>
-    // <p>${newsData1.articles[12].publishedAt}</p>
-    // </div>`;
-     // headlines.innerHTML =`
-    // <div id="topNews" class="col-10">
-    // <h1 class="text1 text-white">${newsData1.articles[0].title}</h1>
-    // </div>`;
-
-    // political.innerHTML =`<div id="politics1" class="ssNews"><br>
-    // <img  src="${newsData1.articles[17].urlToImage}" width="100%" height="50%" alt="news"><br> <br>
-    // <h2>${newsData1.articles[17].description}</h2>
-    // <p>${newsData1.articles[17].publishedAt}</p>
-    // </div>`;
+// {/* <p class="card-text"><small class="text-muted">${time}</small></p> */}
 
 
+// get document on real time
+db.collection('World').onSnapshot(snapshot => {
+    snapshot.docChanges().forEach(change => {
+        const doc = change.doc;
 
-    
-    // gossipNews.innerHTML +=`
-    // <div id="articleOne" class="row no-gutters">
-    // <img class="img col-5" src="${articles[i].urlToImage} alt="${articles[i].source}">
-    // <div class="col-7">
-    // <div class="card-body">
-    // <h2 class="card-text">${articles[i].description}</h2>
-    // <p class="card-text"><small class="text-muted">${articles[i].publishedAt}</small></p>
-    // </div>
-    // </div>
-    // </div>
-    // `; 
+        if(change.type  === 'added'){
+            addLatest(doc.data(), doc.id);
+        } else if (change.type === 'removed'){
+            deleteLatest(doc.id);
+        }
+      
+    });
+
+});
+
+// adding documents
+form1.addEventListener('submit', e => {
+    e.preventDefault();
+    // const now = new Date();
+    const World = {
+
+        title: form1.worldUpDate.value,
+        author: form1.world1.value,
+        description: form1.WorldDes.value,
+        // created_at: firebase.firestore.Timestamp.fromDate(now)
+    };
+ 
+    db.collection('World').add(World).then(() =>{
+        console.log('World news Updated');
+
+
+    }).catch(err =>{
+    console.log(err);
+    })
+});   
+
+// delete Article
+
+const deleteLatest = (id) => {
+  const World = document.querySelectorAll('#articleOne');
+  World.forEach(World => {
+
+      if (World.getAttribute('data-id') === id){
+          World.remove();
+      }
+  });
+}
+
+// deleting list items
+
+write.addEventListener('click', e =>{
+    if (e.target.tagName === 'BUTTON'){
+        const id = e.target.parentElement.getAttribute('data-id');
+
+        db.collection('World').doc(id).delete().then(() => {
+             console.log('World news deleted');
+         });
+    }
+});
+
+const subb = document.querySelector('#butto');
+const form = document.querySelector('.wrapper');
+const div = document.querySelector('#me');
+
+subb.addEventListener('click', e => {
+  e.preventDefault();
+  console.log('it works');
+  div.style.display = 'block';
+  form.style.display = 'block';
+
+})
+
+// adding documents
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  // const now = new Date();
+  const Subscribers = {
+
+      email: form.subscribe.value,
+      // created_at: firebase.firestore.Timestamp.fromDate(now)
+  };
+
+  db.collection('Subscribers').add(Subscribers).then(() =>{
+      console.log('e-mail Updated');
+
+
+  }).catch(err =>{
+  console.log(err);
+  })
+}); 
